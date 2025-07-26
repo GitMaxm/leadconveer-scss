@@ -1,0 +1,110 @@
+/* ===================== */
+/* НАВИГАЦИОННОЕ МЕНЮ */
+/* ===================== */
+.header {
+    &-nav {
+        a {
+            position: relative;
+            transition: all 0.3s ease; /* Плавные переходы для всех свойств */
+
+            /* Эффект при наведении на пункты меню */
+            &:hover {
+                color: var(--orange-juice); /* Изменение цвета текста */
+
+                /* Анимированное подчеркивание */
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px; /* Отступ от текста */
+                    left: 0;
+                    width: 100%; /* Полная ширина */
+                    height: 2px; /* Толщина линии */
+                    background: var(--orange-juice); /* Цвет линии */
+                    animation: underline 0.3s forwards; /* Анимация появления */
+                }
+            }
+        }
+
+        /* Анимация иконок контактов */
+        .header-contacts img {
+            transition: transform 0.3s ease; /* Плавное преобразование */
+
+            &:hover {
+                transform: scale(1.1) rotate(10deg); /* Увеличение + поворот */
+            }
+        }
+    }
+
+    /* Ключевые кадры для анимации подчеркивания */
+    @keyframes underline {
+        from {
+            width: 0;
+        } /* Начальное состояние - невидимая линия */
+        to {
+            width: 100%;
+        } /* Конечное состояние - полная ширина */
+    }
+}
+
+/* ===================== */
+/* АНИМАЦИЯ ЗВЕЗД */
+/* ===================== */
+.header {
+    &-content {
+        &--star-1,
+        &--star-2 {
+            transition: all 1s ease; /* Плавные переходы */
+            animation: float 4s infinite alternate; /* Бесконечная анимация парения */
+        }
+
+        /* Первая звезда */
+        &--star-1 {
+            /* Эффект при наведении */
+            &:hover {
+                transform: scale(1.5) rotate(180deg); /* Увеличение + вращение */
+                filter: drop-shadow(0 0 10px gold); /* Свечение */
+            }
+        }
+
+        /* Вторая звезда */
+        &--star-2 {
+            animation-delay: 0.5s; /* Задержка анимации */
+
+            /* Эффект при наведении */
+            &:hover {
+                transform: scale(1.8); /* Увеличение */
+                filter: drop-shadow(0 0 15px orange); /* Свечение */
+            }
+        }
+
+        /* Анимация плавного парения */
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            } /* Начальное положение */
+            100% {
+                transform: translateY(-20px) rotate(5deg);
+            } /* Конечное положение */
+        }
+    }
+}
+
+/* ===================== */
+/* АДАПТИВ ДЛЯ МОБИЛЬНЫХ */
+/* ===================== */
+@media (max-width: 768px) {
+    .header {
+        &-content {
+            /* Отключаем анимации звезд на мобильных */
+            &--star-1,
+            &--star-2 {
+                animation: none;
+
+                &:hover {
+                    transform: none;
+                    filter: none;
+                }
+            }
+        }
+    }
+}

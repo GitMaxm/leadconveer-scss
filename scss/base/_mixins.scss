@@ -1,0 +1,44 @@
+@mixin flex-center($direction: row, $justify: false) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    @if $justify {
+        justify-content: $justify;
+    }
+}
+
+@mixin flex-column($gap: false) {
+    display: flex;
+    flex-direction: column;
+
+    @if $gap {
+        gap: $gap + px;
+    }
+}
+
+$font-sizes: (
+    14: --font-tiny,
+    16: --font-tiny,
+    18: --font-small-alt,
+    20: --font-base,
+    24: --font-small,
+    32: --font-medium,
+    36: --font-36,
+    40: --font-medium-large,
+    48: --font-title-2,
+    80: --font-large
+);
+
+@mixin font-size($size) {
+    @if map-has-key($font-sizes, $size) {
+        font-size: var(#{map-get($font-sizes, $size)});
+    } @else {
+        @warn "Размер шрифта #{$size} не найден в $font-sizes";
+        font-size: $size + px;
+    }
+}
+
+@mixin small-gray {
+    @include font-size(24);
+    color: var(--grey);
+}

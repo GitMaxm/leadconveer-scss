@@ -1,0 +1,86 @@
+.additional {
+    &__inner {
+        @include flex-column(40);
+    }
+
+    &-blocks {
+        @include flex-center(row, center);
+        gap: 20px;
+
+        @media (max-width: 805px) {
+            @include flex-center(column);
+        }
+    }
+
+    &-block {
+        @include flex-column(30);
+        position: relative;
+        justify-content: space-between;
+
+        background: var(--light-grey);
+        border-radius: 40px;
+        padding: 40px;
+        max-width: 730px;
+        width: 100%;
+
+        @media (max-width: 805px) {
+            padding: 20px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/decor-icons/star2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 48px;
+            width: 48px;
+            top: 12%;
+            right: 5%;
+        }
+
+        &__title {
+            max-width: 550px;
+
+            h3 {
+                margin-bottom: 20px;
+                font-family: var(--second-family);
+                font-weight: 700;
+                @include font-size(36);
+                line-height: 117%;
+            }
+
+            p {
+                @include font-size(24);
+
+                span {
+                    font-family: var(--second-family);
+                    font-weight: 700;
+                    @include font-size(36);
+                    line-height: 117%;
+
+                    background: linear-gradient(
+                        90deg,
+                        #f60 0%,
+                        #f26659 27.4%,
+                        #f06177 37.4%,
+                        #e55d97 48.4%,
+                        #ca46d2 71.4%,
+                        #8d13f9 100%
+                    );
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        button {
+            padding: 22px;
+
+            @media (max-width: 805px) {
+                padding: 16px;
+            }
+        }
+    }
+}

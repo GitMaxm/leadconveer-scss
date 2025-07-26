@@ -1,0 +1,44 @@
+:root {
+	--container-width: 1920px;
+	--container-padding: 30px;
+
+	--font-family: "Inter", sans-serif;
+	--second-family: "Montserrat", sans-serif;
+	--third-family: "Kollektif", sans-serif;
+
+	--page-bg: #ffffff;
+	--light-grey: #f6f6f6;
+	--orange-juice: #f60;
+	--white: #fff;
+	--dark-grey: #2d2d2d;
+	--grey: #808080;
+	--blueberry: #8a38d6;
+	--grey2: #c0c0c0;
+
+	/* Крупные заголовки: 80px (1920) → ~50px (375) */
+	--font-large: clamp(2.188rem, 1.505rem + 2.91vw, 5rem);
+
+	/* Заголовки 2 уровня: 48px (1920) → ~30px (375) */
+	--font-title-2: clamp(1.625rem, 1.291rem + 1.42vw, 3rem);
+
+	/* Промежуточные заголовки: 40px (1920) → ~25px (375) */
+	--font-medium-large: clamp(1.5625rem, -0.25rem + 2.29vw, 2.5rem);
+
+	/* 36px (1920) → ~24px (375) */
+	--font-36: clamp(1.5rem, 0.125rem + 1.88vw, 2.25rem);
+
+	/* Средний текст: 32px (1920) → ~20px (375) */
+	--font-medium: clamp(1.25rem, -0.25rem + 1.88vw, 2rem);
+
+	/* Базовый текст: 20px (1920) → 16px (375) */
+	--font-base: clamp(1rem, 0.25rem + 0.83vw, 1.25rem);
+
+	/* Мелкий текст: 24px (1920) → ~18px (375) */
+	--font-small: clamp(1.125rem, 0.125rem + 1.25vw, 1.5rem);
+
+	/* Доп. мелкий текст: 24px (1920) → ~18px (375) */
+	--font-small-alt: clamp(1.125rem, 0.125rem + 1.25vw, 1.5rem);
+
+	/* Очень мелкий текст: 16px (1920) → 14px (375) */
+	--font-tiny: clamp(0.875rem, 0.625rem + 0.21vw, 1rem);
+}

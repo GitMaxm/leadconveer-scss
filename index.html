@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="bg-light-grey rounded-b-50px mb-section" aria-label="Шапка сайта">
+
+        <!-- Навигация и лого -->
+        <div class="header-nav bg-dark-grey rounded-b-50px" aria-label="Основная навигация">
+            <div class="container">
+                <div class="header-nav__inner">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Логотип компании">
+                    </div>
+                    <nav class="header-nav__menu" aria-label="Меню навигации">
+                        <ul class="header-nav__list">
+                            <li><a href="#mechanism" aria-label="Как это работает">Как это работает</a></li>
+                            <li><a href="#price" aria-label="Цены">Цена</a></li>
+                            <li><a href="#review" aria-label="Отзывы">Отзывы</a></li>
+                            <li><a href="#contacts" aria-label="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-contacts">
+                        <img src="img/header/social-icons/whatsapp.png" alt="WhatsApp">
+                        <img src="img/header/social-icons/telegram.png" alt="Telegram">
+                        <a href="tel:+74951183282" aria-label="Позвонить по телефону">+7 495 118-32-82</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- основной контент шапки -->
+        <div class="header-content">
+            <div class="container">
+                <div class="header-content__inner">
+                    <div class="header-content__title">
+                        <h1><span>Лидогенерация</span><br>для бизнеса</h1>
+                        <div class="header-content__description">
+                            <p>Покупайте только целевые лиды<br>по фиксированной цене от 300 ₽</p>
+                            <img src="img/header/money-face.png" alt="Смайлик с деньгами">
+                        </div>
+                        <a href="#price" class="header-content__btn btn-cta" aria-label="Выбрать пакет лидов">Выбрать
+                            пакет лидов</a>
+                    </div>
+
+                    <div class="header-content__image">
+                        <img src="img/header/main-header.png"
+                            alt="Декоративная картинка секции, изображена женщина с ноутбуком">
+                        <div class="header-content--star-1" aria-hidden="true">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.8157 0L35.1112 23.2318L60 25.8157L36.7682 35.1112L34.1843 60L24.8888 36.7682L0 34.1843L23.2318 24.8888L25.8157 0Z"
+                                    fill="url(#paint0_linear_753_562)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_562" x1="0" y1="30" x2="60" y2="30"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="header-content--star-2" aria-hidden="true">
+                            <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.6936 0L35.4931 23.2177L62 22.6936L38.7823 35.4931L39.3064 62L26.5069 38.7823L0 39.3064L23.2177 26.5069L22.6936 0Z"
+                                    fill="url(#paint0_linear_753_563)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_563" x1="0" y1="31" x2="62" y2="31"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Нижняя часть шапки -->
+        <div class="header-bottom">
+            <div class="container">
+                <ul role="list" aria-label="Ключевые услуги">
+                    <li role="listitem">Лидогенерация в b2b</li>
+                    <li role="listitem">Биржа лидов</li>
+                    <li role="listitem">Сервис по Лидгену</li>
+                    <li role="listitem">Лиды для производства</li>
+                    <li role="listitem">Клиенты<br>для бизнеса</li>
+                    <li role="listitem">Определить телефон посетителя сайта</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Лиды -->
+        <section class="lead mb-section" aria-labelledby="lead-section-title">
+            <div class="container">
+                <div class="lead__inner">
+                    <div class="section-title text-center">
+                        <h2 id="lead-section-title">Завалим ваш отдел продаж <br><span>целевыми Лидами</span></h2>
+                    </div>
+
+                    <div class="lead-blocks" role="list">
+                        <div class="lead-block" role="listitem">
+                            <div class="lead-block__text">
+                                <h3>Оплата за результат</h3>
+                                <p>Вы платите только за переданные и получение вами целевые Лиды — их контактные данные
+                                    (телефон, Telegram, email)</p>
+                            </div>
+                            <div class="lead-block__image">
+                                <img src="./img/lead/tel.png" alt="Иллюстрация: телефон и график оплаты за результат">
+                            </div>
+                        </div>
+
+                        <div class="lead-block" role="listitem">
+                            <div class="lead-block__text">
+                                <h3>Качественные лиды</h3>
+                                <p>Все передаваемые вам Лиды — это потенциальные клиенты, которые искали ваш товар
+                                    или услугу</p>
+                            </div>
+                            <div class="lead-block__image">
+                                <img src="./img/lead/men.png" alt="Иллюстрация: довольные клиенты">
+                            </div>
+                        </div>
+
+                        <div class="lead-block" role="listitem">
+                            <div class="lead-block__text">
+                                <h3>Любой объём — на ваш выбор</h3>
+                                <p>Покупайте сколько контактов потенциальных клиентов в месяц
+                                    — сколько требуется вам!</p>
+                            </div>
+                            <div class="lead-block__image">
+                                <img src="./img/lead/sell.png" alt="Иллюстрация: график роста продаж">
+                            </div>
+                        </div>
+
+                        <div class="lead-block" role="listitem">
+                            <div class="lead-block__text">
+                                <h3>Комплекс технологий</h3>
+                                <p>После расчёта стоимости Лидов и оплаты выбранного пакета — вы получите уникальный
+                                    код для своего сайта, который позволит отслеживать контакты тех, кто не оставил
+                                    заявку</p>
+                            </div>
+                            <div class="lead-block__image">
+                                <img src="./img/lead/comp.png" alt="Иллюстрация: современные технологии анализа данных">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены -->
+        <section class="price mb-section" id="price" aria-labelledby="price-section-title">
+            <div class="container">
+                <div class="price__inner">
+                    <div class="section-title text-center">
+                        <h2 id="price-section-title">Стоимость технологий <br><span>«Лид Конвейер»</span></h2>
+                        <p>Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты
+                            и абонентской платы</p>
+                    </div>
+
+                    <div class="price-blocks" role="list">
+                        <div class="price-block" role="listitem">
+                            <div class="price-block__content">
+                                <div class="price-rate">
+                                    <div>Старт</div>
+                                    <img class="anim-star-1" src="./img/decor-icons/star-black.png" alt="Чёрная звезда"
+                                        aria-hidden="true">
+                                </div>
+
+                                <h3>50 готовых лидов за <span>22 500 ₽</span></h3>
+                                <p>Стартовый пакет для тех, кто хочет купить Лидов
+                                    со своего сайта и повысить свои продаж
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>50 Лидов</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span class="bold">450 ₽ за один Лид</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Получение за 5–7 дней</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta" aria-label="Купить тариф Старт">Купить</button>
+                        </div>
+
+                        <div class="price-block bg-dark-grey" role="listitem">
+                            <div class="price-block__content">
+                                <div class="price-rate price-rate--dark">
+                                    <div>Стандарт</div>
+                                    <img class="anim-star-2" src="./img/decor-icons/star-white.png" alt="Белая звезда"
+                                        aria-hidden="true">
+                                </div>
+                                <h3 class="text-white">100 готовых лидов за <span>40 000 ₽</span></h3>
+                                <p>
+                                    Оптимальный пакет Лидов для любого
+                                    отдела продаж и для повышения продаж своих
+                                    товаров или услуг
+                                </p>
+
+                                <ul class="text-white">
+                                    <li>
+                                        <div class="price-list__decor price-list__decor--dark" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>100 Лидов</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor price-list__decor--dark" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span class="bold">400 ₽ за один Лид</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor price-list__decor--dark" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Получение за 7–14 дней</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor price-list__decor--dark" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Возможность показа Лидам рекламы через Яндекс.Директ</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta" aria-label="Купить тариф Стандарт">Купить</button>
+                        </div>
+
+                        <div class="price-block" role="listitem">
+                            <div class="price-block__content">
+                                <div class="price-rate">
+                                    <div>Премиум</div>
+                                    <img class="anim-star-1" src="./img/decor-icons/star-black.png" alt="Чёрная звезда"
+                                        aria-hidden="true">
+                                </div>
+
+                                <h3>300 готовых лидов за <span>90 000 ₽</span></h3>
+                                <p>Максимум целевых Лидов в ближайшее время для вашего бизнеса которые уже завтра могут
+                                    стать Вашими клиентами!
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>300 Лидов</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span class="bold">300 ₽ за один Лид</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Получение за 14–30 дней</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Возможность показа Лидам рекламы через Яндекс.Директ</span>
+                                    </li>
+                                    <li>
+                                        <div class="price-list__decor" aria-hidden="true">
+                                            <svg width="28" height="21" viewBox="0 0 28 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 9.72581L10.5 18.5L26 2.5" stroke-width="4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <span>Готовый и конверсионный скрипт продаж целевым Лидам</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta" aria-label="Купить тариф Премиум">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Доп услуги -->
+        <section class="additional mb-section" aria-labelledby="additional-section-title">
+            <div class="container">
+                <div class="additional__inner">
+                    <div class="section-title text-center">
+                        <h2 id="additional-section-title">Дополнительные услуги</h2>
+                    </div>
+
+                    <div class="additional-blocks" role="list">
+                        <div class="additional-block" role="listitem">
+                            <div class="additional-block__title">
+                                <h3>Создание <br> промо-страницы</h3>
+                                <p>от <span>15 000 ₽</span></p>
+                            </div>
+                            <button class="btn-cta" aria-label="Купить услугу 'Создание промо-страницы'">Купить</button>
+                        </div>
+
+                        <div class="additional-block" role="listitem">
+                            <div class="additional-block__title">
+                                <h3>Настройка и ведение Яндекс.Директ</h3>
+                                <p>от <span>10 000 ₽</span></p>
+                            </div>
+                            <button class="btn-cta"
+                                aria-label="Купить услугу 'Настройка и ведение Яндекс.Директ'">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Клиенты -->
+        <section class="clients mb-section" aria-labelledby="clients-section-title">
+            <div class="container">
+                <div class="clients__inner">
+                    <div class="section-title text-center">
+                        <h2 id="clients-section-title">Клиенты, которые уже покупают <br><span>Лидов для своего
+                                бизнеса</span></h2>
+                        <p>Более 5000 компаний по всей России уже используют покупку Лидов!</p>
+                    </div>
+
+                    <div class="clients-blocks" role="list" aria-label="Логотипы клиентов">
+                        <div class="clients-block" role="listitem">
+                            <div class="clients-block__logo">
+                                <img src="./img/clients/skoda.png" alt="Логотип Škoda">
+                            </div>
+                        </div>
+                        <div class="clients-block" role="listitem">
+                            <div class="clients-block__logo">
+                                <img src="./img/clients/skillbox.png" alt="Логотип Skillbox">
+                            </div>
+                        </div>
+                        <div class="clients-block" role="listitem">
+                            <div class="clients-block__logo">
+                                <img src="./img/clients/world.png" alt="Логотип World Class">
+                            </div>
+                        </div>
+                        <div class="clients-block" role="listitem">
+                            <div class="clients-block__logo">
+                                <img src="./img/clients/bank.png" alt="Логотип банка">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="review mb-section" aria-labelledby="review-section-title" id="review">
+            <div class="container">
+                <div class="review__inner">
+                    <div class="section-title text-center">
+                        <h2 id="review-section-title">Отзывы клиентов</h2>
+                        <p>Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении более 2-х лет</p>
+                    </div>
+
+                    <!-- Отзыв - текст -->
+                    <div class="review-blocks" role="list" aria-label="Список отзывов клиентов">
+                        <div class="review-block" role="listitem">
+                            <div class="review-content">
+                                <div class="review-rate">
+                                    <h3>5,0</h3>
+                                    <div class="review-rate__stars" data-rating="5" aria-hidden="true"></div>
+                                    <span class="visually-hidden">Рейтинг: 5 из 5 звёзд</span>
+                                </div>
+                                <blockquote class="review-text">
+                                    <p>«Стабильно получаем новые лиды из сервиса. С точки зрения рентабельности
+                                        нареканий нет. Тёплая заявка 800–1000 рублей, конверсия, цена-качество
+                                        устраивает. Общее впечатление достаточно хорошее, цена, качество, скорость».</p>
+                                </blockquote>
+                                <p class="review-category">Ниша: банкротство, списание долгов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-block" role="listitem">
+                            <div class="review-content">
+                                <div class="review-rate">
+                                    <h3>4,8</h3>
+                                    <div class="review-rate__stars" data-rating="5" aria-hidden="true"></div>
+                                    <span class="visually-hidden">Рейтинг: 4.8 из 5 звёзд</span>
+                                </div>
+                                <blockquote class="review-text">
+                                    <p>«С вашим сервисом работаем с июня 2022 года. Нас заинтересовало, и мы решили
+                                        протестировать. Взяли минимальный пакет из 10 новых лидов, а потом, как он
+                                        закончился, взяли повышенный пакет. Учитывая нашу сферу и посмотреть статистику,
+                                        из 100 заинтересованных 15 в продажу. Это хороший результат».</p>
+                                </blockquote>
+                                <p class="review-category">Ниша: банкротство, списание долгов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-block" role="listitem">
+                            <div class="review-content">
+                                <div class="review-rate">
+                                    <h3>5,0</h3>
+                                    <div class="review-rate__stars" data-rating="5" aria-hidden="true"></div>
+                                    <span class="visually-hidden">Рейтинг: 5 из 5 звёзд</span>
+                                </div>
+                                <blockquote class="review-text">
+                                    <p>«С сервисом работаем чуть меньше года. Немного сомневались, но согласились
+                                        попробовать, а после продолжили работать. Новые клиенты появились сразу,
+                                        передали на наш колл-центр. С вашего источника дешевле, чем с других сервисов.
+                                        Безусловно, с вами стоит работать».</p>
+                                </blockquote>
+                                <p class="review-category">Ниша: банкротство, списание долгов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-block" role="listitem">
+                            <div class="review-content">
+                                <div class="review-rate">
+                                    <h3>4,9</h3>
+                                    <div class="review-rate__stars" data-rating="5" aria-hidden="true"></div>
+                                    <span class="visually-hidden">Рейтинг: 4.9 из 5 звёзд</span>
+                                </div>
+                                <blockquote class="review-text">
+                                    <p>«С вашей компанией работаем более 2-х лет, сотрудничество полезное. Мы все
+                                        посмотрели, разобрались, что сервис даёт реально целевые заявки. Заключили
+                                        контракт на 23 000 рублей, окупилось. Понравилась технология, она помогает нам
+                                        получать лиды».</p>
+                                </blockquote>
+                                <p class="review-category">Ниша: банкротство, списание долгов</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв - видео -->
+                    <div class="review-video">
+                        <div class="review-video__inner">
+
+                            <!-- блок с видео -->
+                            <div class="review-video__block" role="listitem">
+                                <div class="review-video__media">
+                                    <button class="review-video__play-btn"
+                                        aria-label="Воспроизвести видео: Отзыв 1: название">
+                                        <svg width="53" height="62" viewBox="0 0 53 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M53 31L0.499997 61.3109L0.5 0.689109L53 31Z"
+                                                fill="url(#paint0_linear_753_425)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_753_425" x1="18" y1="-4" x2="18"
+                                                    y2="66" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF6600" />
+                                                    <stop offset="0.274" stop-color="#F26659" />
+                                                    <stop offset="0.374" stop-color="#F06177" />
+                                                    <stop offset="0.484" stop-color="#E65D97" />
+                                                    <stop offset="0.714" stop-color="#CA46D2" />
+                                                    <stop offset="1" stop-color="#8D13F9" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="review-video__title">
+                                    Отзыв 1: название
+                                </div>
+                            </div>
+
+                            <!-- блок с видео -->
+                            <div class="review-video__block" role="listitem">
+                                <div class="review-video__media">
+                                    <button class="review-video__play-btn"
+                                        aria-label="Воспроизвести видео: Отзыв 2: название">
+                                        <svg width="53" height="62" viewBox="0 0 53 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M53 31L0.499997 61.3109L0.5 0.689109L53 31Z"
+                                                fill="url(#paint0_linear_753_425)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_753_425" x1="18" y1="-4" x2="18"
+                                                    y2="66" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF6600" />
+                                                    <stop offset="0.274" stop-color="#F26659" />
+                                                    <stop offset="0.374" stop-color="#F06177" />
+                                                    <stop offset="0.484" stop-color="#E65D97" />
+                                                    <stop offset="0.714" stop-color="#CA46D2" />
+                                                    <stop offset="1" stop-color="#8D13F9" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="review-video__title">
+                                    Отзыв 2: название
+                                </div>
+                            </div>
+
+                            <!-- блок с видео -->
+                            <div class="review-video__block" role="listitem">
+                                <div class="review-video__media">
+                                    <button class="review-video__play-btn"
+                                        aria-label="Воспроизвести видео: Отзыв 3: название">
+                                        <svg width="53" height="62" viewBox="0 0 53 62" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M53 31L0.499997 61.3109L0.5 0.689109L53 31Z"
+                                                fill="url(#paint0_linear_753_425)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_753_425" x1="18" y1="-4" x2="18"
+                                                    y2="66" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF6600" />
+                                                    <stop offset="0.274" stop-color="#F26659" />
+                                                    <stop offset="0.374" stop-color="#F06177" />
+                                                    <stop offset="0.484" stop-color="#E65D97" />
+                                                    <stop offset="0.714" stop-color="#CA46D2" />
+                                                    <stop offset="1" stop-color="#8D13F9" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="review-video__title">
+                                    Отзыв 3: название
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- секция Технология «Лид Конвейер» -->
+        <section class="technology mb-section" aria-labelledby="technology-section-title">
+            <div class="container">
+                <div class="technology__inner">
+                    <div class="technology__img">
+                        <img src="img/technology/main.png"
+                            alt="Декоративная картинка для секции технологии Лид Конвейер">
+
+                        <div class="technology__img--star-1 anim-star-3">
+                            <svg width="73" height="73" viewBox="0 0 73 73" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.6549 0.973238L42.7026 28.5842L72.2828 31.655L44.6718 42.7028L41.601 72.2829L30.5532 44.672L0.973052 41.6011L28.584 30.5534L31.6549 0.973238Z"
+                                    fill="url(#paint0_linear_753_411)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_411" x1="0.973052" y1="41.6011" x2="72.2828"
+                                        y2="31.655" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="technology__img--star-2 anim-star-2">
+                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.5685 0L24.4548 21.2598L0 20.4315L21.2598 32.5452L20.4315 57L32.5452 35.7402L57 36.5685L35.7402 24.4548L36.5685 0Z"
+                                    fill="url(#paint0_linear_753_412)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_412" x1="57" y1="28.5" x2="0" y2="28.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="technology-text">
+                        <div class="section-title">
+                            <h2 id="technology-section-title">Технология
+                                <br><span>«Лид&nbsp;Конвейер»</span>
+                            </h2>
+
+                            <img src="img/technology/face.png" alt="Смайл с очками">
+                        </div>
+                        <p>Мы разработали программный комплекс, который позволяет определять контактные данные (телефон,
+                            Telegram, email) тех посетителей вашего сайта, кто был на сайте, но не оставил заявку.</p>
+                        <p>Далее, на основе собственных разработок, мы идентифицируем пользователей по интересам и
+                            интересующим их товарам и услугам — вам передаём только тех, кто заинтересован в вашей
+                            услуге или товаре.</p>
+                        <p>Вы платите только за результат — за полученных Лидов (заявки) на свои услуги или товары.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кнопка "Зарегистрироваться" №1 -->
+        <section class="registration mb-section" aria-labelledby="register-title-1">
+            <div class="container">
+                <div class="registration__inner registration__inner--revers bg-dark-grey">
+                    <div class="registration__text">
+                        <h2 id="register-title-1">Зарегистрируйтесь и добавьте свой проект в систему — начните получать
+                            Лидов сегодня!</h2>
+                        <button class="btn-cta"
+                            aria-label="Зарегистрироваться и добавить проект">Зарегистрироваться</button>
+                    </div>
+                    <div class="registration__img">
+                        <img src="img/registration/main-r.png" alt="Иллюстрация процесса регистрации">
+                        <div class="registration__img--star-1 anim-star-1" aria-hidden="true">
+                            <svg width="88" height="89" viewBox="0 0 88 89" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.2102 0L50.3773 33.3287L88 32.5763L55.0458 50.9498L55.7898 89L37.6227 55.6713L0 56.4237L32.9542 38.0502L32.2102 0Z"
+                                    fill="url(#paint0_linear_753_405)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_405" x1="0" y1="44.5" x2="88" y2="44.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- механизм работы / Как это работает? (слайдер) -->
+        <section class="mechanism mb-section" aria-labelledby="mechanism-section-title" id="mechanism">
+            <div class="container">
+                <div class="swiper mechanism-swiper" role="region" aria-label="Слайдер процесса работы">
+                    <div class="swiper-wrapper mechanism-wrapper" role="list">
+                        <!-- Слайды будут добавлены через JS -->
+                    </div>
+                    <div class="swiper-pagination mechanism-pagination" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео - презентация -->
+        <section class="presentation mb-section" aria-labelledby="presentation-section-title">
+            <div class="container">
+                <div class="presentation__inner">
+                    <div class="section-title text-center">
+                        <h2 id="presentation-section-title">
+                            Мы подготовили для вас<br>видео-презентацию <span>нашей работы</span>
+                        </h2>
+                    </div>
+
+                    <div class="presentation-video">
+                        <div class="presentation-video__media">
+                            <button class="presentation-video__play-btn"
+                                aria-label="Воспроизвести видео-презентацию нашей работы">
+                                <svg width="53" height="62" viewBox="0 0 53 62" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M53 31L0.499997 61.3109L0.5 0.689109L53 31Z"
+                                        fill="url(#paint0_linear_753_425)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_753_425" x1="18" y1="-4" x2="18" y2="66"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF6600" />
+                                            <stop offset="0.274" stop-color="#F26659" />
+                                            <stop offset="0.374" stop-color="#F06177" />
+                                            <stop offset="0.484" stop-color="#E65D97" />
+                                            <stop offset="0.714" stop-color="#CA46D2" />
+                                            <stop offset="1" stop-color="#8D13F9" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кнопка "Зарегистрироваться" №2 -->
+        <section class="registration mb-section" aria-labelledby="register-title-2">
+            <div class="container">
+                <div class="registration__inner bg-dark-grey">
+                    <div class="registration__img">
+                        <img src="img/registration/main-l.png" alt="Иллюстрация процесса генерации лидов">
+                        <div class="registration__img--star-2 anim-star-1" aria-hidden="true">
+                            <svg width="66" height="68" viewBox="0 0 66 68" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.0375 0L37.7592 25.4888L66 25.0119L41.3081 38.9521L41.9625 68L28.2408 42.5112L0 42.9881L24.6919 29.0479L24.0375 0Z"
+                                    fill="url(#paint0_linear_753_348)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_348" x1="0" y1="34" x2="66" y2="34"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="registration__img--star-3 anim-star-2" aria-hidden="true">
+                            <svg width="68" height="70" viewBox="0 0 68 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.3831 0L41.2035 28.475L68 37.0439L40.2598 42.3343L31.6169 70L26.7965 41.525L0 32.9561L27.7402 27.6657L36.3831 0Z"
+                                    fill="url(#paint0_linear_753_349)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_753_349" x1="0" y1="35" x2="68" y2="35"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF6600" />
+                                        <stop offset="0.274" stop-color="#F26659" />
+                                        <stop offset="0.374" stop-color="#F06177" />
+                                        <stop offset="0.484" stop-color="#E65D97" />
+                                        <stop offset="0.714" stop-color="#CA46D2" />
+                                        <stop offset="1" stop-color="#8D13F9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="registration__text">
+                        <h2 id="register-title-2">Давайте принесём результат Вашему бизнесу? Завалите свой отдел продаж
+                            Лидами!</h2>
+                        <button class="btn-cta"
+                            aria-label="Зарегистрироваться и получить лиды">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts mb-sec mb-section" id="contacts" aria-labelledby="contacts-title">
+            <div class="container">
+                <div class="contacts__inner bg-light-grey">
+                    <div class="contacts-content">
+                        <div class="section-title text-center">
+                            <h2 id="contacts-title">Контакты</h2>
+                            <p>Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь с нами,
+                                и мы предоставим необходимую информацию!</p>
+                        </div>
+
+                        <ul class="contacts-content__data" role="list">
+                            <li class="contacts-content__data-item" role="listitem">
+                                <p>Адрес офиса</p>
+                                <address>г. Москва, ул. Дубининская, д. 53</address>
+                            </li>
+                            <li class="contacts-content__data-item" role="listitem">
+                                <p>Телефон:</p>
+                                <a href="tel:+74951183282" aria-label="Позвонить по телефону">+7 495 118-32-82</a>
+                            </li>
+                            <li class="contacts-content__data-item" role="listitem">
+                                <p>Электронная почта</p>
+                                <a href="mailto:mailbox@leadconveer.ru"
+                                    aria-label="Написать на электронную почту">mailbox@leadconveer.ru</a>
+                            </li>
+                            <li class="contacts-content__data-item contacts-content__data-item--social" role="listitem">
+                                <p>Или напишите нам в любимом мессенджере:</p>
+                                <a href="#" aria-label="Написать в Telegram">
+                                    <img src="img/contacts/telegram.png" alt="Telegram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts-img">
+                        <img src="img/contacts/main.png"
+                            alt="Здание офиса компании по адресу: г. Москва, ул. Дубининская, д. 53">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer bg-dark-grey rounded-t-50px">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer-copyright text-center text-white">
+                    <p>© 2025 Все права защищены. Технология «Лид Конвейер» - лидогенерация для бизнеса.</p>
+                    <p class="footer-copyright__info">ООО «ДС-ГРУПП» ИНН 7801355174 ОГРН 1187847129425</p>
+                </div>
+
+                <ul class="footer-social small-gray">
+                    <li>Блог</li>
+                    <li>Договор-оферта</li>
+                    <li>Политика конфиденциальности</li>
+                    <li>Соглашение об обработке данных</li>
+                    <li>Вход в личный кабинет</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/reviewStar.js"></script>
+    <script src="js/mechanismSwiper.js"></script>
+
+
+</body>
+
+</html>

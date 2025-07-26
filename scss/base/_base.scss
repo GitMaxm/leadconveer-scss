@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--dark-grey);
+	font-family: var(--font-family);
+	@include font-size(32);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	display: block;
+}
+
+.btn-cta {
+	background: var(--orange-juice);
+	border-radius: 20px;
+	font-family: var(--third-family);
+	@include font-size(24);
+	text-transform: uppercase;
+	color: var(--white);
+	text-align: center;
+	width: 100%;
+}
+
+.section-title {
+	h2 {
+		font-family: var(--second-family);
+		font-weight: 700;
+		line-height: 108%;
+		@include font-size(48);
+	}
+	p {
+		margin: 20px auto 0;
+		color: var(--grey);
+	}
+
+	span {
+		color: var(--orange-juice);
+	}
+}

@@ -1,0 +1,114 @@
+.review {
+    .section-title {
+        margin: 0 auto;
+        max-width: 791px;
+    }
+
+    &__inner {
+        @include flex-column(40);
+    }
+
+    &-blocks {
+        @include flex-center(row, space-between);
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media (max-width: 1840px) {
+            justify-content: center;
+        }
+    }
+
+    &-block {
+        border-radius: 30px;
+        width: 100%;
+        max-width: 430px;
+        height: 636px;
+        background: var(--light-grey);
+        padding: 40px;
+
+        @media (max-width: 1500px) {
+            height: 500px;
+        }
+        @media (max-width: 939px) {
+            height: auto;
+        }
+    }
+
+    &-content {
+        @include flex-column(20);
+
+        h3 {
+            font-family: var(--second-family);
+            font-weight: 700;
+            @include font-size(36);
+            line-height: 144%;
+        }
+    }
+    &-rate {
+        @include flex-center;
+        gap: 26px;
+
+        &__stars {
+            @include flex-center;
+            gap: 6px;
+        }
+        &__star {
+            @include flex-center;
+        }
+    }
+
+    &-text {
+        @include font-size(24);
+    }
+    &-category {
+        @include small-gray;
+    }
+
+    &-video {
+        &__inner {
+            @include flex-center(row, space-between);
+            gap: 25px;
+
+            @media (max-width: 1840px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        &__block {
+            width: 100%;
+            max-width: 580px;
+
+            @media (max-width: 1230px) {
+                @include flex-center(column, center);
+                gap: 10px;
+            }
+        }
+
+        &__media {
+            position: relative;
+            border-radius: 40px;
+            width: 100%;
+            max-width: 580px; // Максимальная ширина на десктопе
+
+            // Автоматическая высота по соотношению сторон (16:9 ≈ 56.25%)
+            aspect-ratio: 16 / 9;
+            background: var(--dark-grey);
+        }
+
+        &__play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__title {
+            @include small-gray;
+            margin-top: 12px;
+
+            @media (max-width: 1230px) {
+                margin-top: 0;
+            }
+        }
+    }
+}

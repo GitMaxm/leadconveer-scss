@@ -1,0 +1,25 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/fonts";
+@import "./base/anim-stars";
+@import "./base/anim-btn";
+@import "./base/anim-header";
+
+/* Blocks */
+@import "./blocks/header";
+@import "./blocks/lead";
+@import "./blocks/price";
+@import "./blocks/additional";
+@import "./blocks/clients";
+@import "./blocks/review";
+@import "./blocks/technology";
+@import "./blocks/registration";
+@import "./blocks/mechanism";
+@import "./blocks/presentation";
+@import "./blocks/contacts";
+@import "./blocks/footer";

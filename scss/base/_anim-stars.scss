@@ -1,0 +1,120 @@
+/* Базовые анимации звёзд */
+.anim-star-1 {
+    animation: star-pulse 1.5s infinite alternate;
+
+    &:hover {
+        animation: star-spin 0.8s infinite linear;
+    }
+}
+
+.anim-star-2 {
+    animation: star-twinkle 2s infinite alternate;
+
+    &:hover {
+        animation: star-jump 0.5s infinite ease;
+    }
+}
+
+.anim-star-3 {
+    animation: star-orbit 3s infinite ease-in-out;
+
+    &:hover {
+        animation:
+            star-orbit 1.5s infinite ease-in-out,
+            star-glow 1s infinite alternate;
+    }
+}
+
+/* Анимация для звёзд в заголовках */
+h3::after {
+    animation: star-float 4s infinite ease-in-out alternate;
+}
+
+/* Отключение анимаций на мобильных */
+@media (max-width: 768px) {
+    .anim-star-1,
+    .anim-star-2,
+    .anim-star-3,
+    h3::after {
+        animation: none !important;
+
+        &:hover {
+            animation: none !important;
+        }
+    }
+}
+
+/* Ключевые кадры */
+@keyframes star-orbit {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(5px, -5px) rotate(5deg);
+    }
+    50% {
+        transform: translate(0, -8px) rotate(0deg);
+    }
+    75% {
+        transform: translate(-5px, -5px) rotate(-5deg);
+    }
+}
+
+@keyframes star-glow {
+    from {
+        filter: drop-shadow(0 0 2px rgba(255, 255, 150, 0.3));
+    }
+    to {
+        filter: drop-shadow(0 0 8px rgba(255, 255, 150, 0.8));
+    }
+}
+
+@keyframes star-twinkle {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(10deg);
+    }
+}
+
+@keyframes star-jump {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes star-pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes star-spin {
+    from {
+        transform: rotate(0deg) scale(1.2);
+    }
+    to {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes star-float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}

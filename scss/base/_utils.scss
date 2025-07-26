@@ -1,0 +1,151 @@
+.none {
+	display: none !important;
+}
+.bg-light-grey {
+	background: var(--light-grey);
+}
+
+.bg-dark-grey {
+	background: var(--dark-grey) !important;
+}
+
+.bg-orange-juice {
+	background: var(--orange-juice);
+}
+
+.rounded-b-50px {
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.rounded-t-50px {
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+}
+.mb-section {
+	margin-bottom: 120px;
+}
+@media (max-width: 1200px) {
+	.mb-section {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width: 768px) {
+	.mb-section {
+		margin-bottom: 50px;
+	}
+}
+
+.small-gray {
+	@include small-gray;
+}
+.text-white {
+	color: var(--white);
+}
+
+.text-gray {
+	color: var(--grey);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.bold {
+	font-weight: 700;
+}
+.semibold {
+	font-weight: 600;
+}
+.normal {
+	font-weight: 400;
+}
+.light {
+	font-weight: 300;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.underline {
+	text-decoration: underline;
+}
+.line-through {
+	text-decoration: line-through;
+}
+
+.flex {
+	display: flex;
+}
+.inline-flex {
+	display: inline-flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+.flex-col {
+	flex-direction: column;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+
+.items-start {
+	align-items: flex-start;
+}
+.items-end {
+	align-items: flex-end;
+}
+.items-center {
+	align-items: center;
+}
+.items-baseline {
+	align-items: baseline;
+}

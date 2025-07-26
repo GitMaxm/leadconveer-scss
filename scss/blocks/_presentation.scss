@@ -1,0 +1,55 @@
+.presentation {
+    .section-title {
+        max-width: 930px;
+        margin: 0 auto;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/presentation/camera.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 72px;
+            width: 72px;
+            // top: 26%;
+            bottom: 0;
+            right: -10%;
+
+            @media (max-width: 1440px) {
+                right: 0%;
+            }
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        @include flex-column(40);
+    }
+
+    &-video {
+        margin: 0 auto;
+        background: var(--dark-grey);
+        border-radius: 40px;
+        width: 100%;
+        max-width: 1180px;
+
+        aspect-ratio: 4 / 2; /* Соотношение ширины к высоте */
+        position: relative;
+
+        @supports not (aspect-ratio: 4/3) {
+            /* Фолбэк для старых браузеров */
+            padding-top: 75%;
+        }
+
+        &__play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

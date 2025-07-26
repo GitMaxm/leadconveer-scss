@@ -1,0 +1,71 @@
+.registration {
+    &__inner {
+        @include flex-center(row, space-around);
+        border-radius: 40px;
+        padding: 60px 120px;
+        gap: 20px;
+
+        @media (max-width: 1580px) {
+            flex-direction: column;
+
+            &--revers {
+                flex-direction: column-reverse;
+            }
+
+            padding: 40px 80px;
+        }
+
+        @media (max-width: 900px) {
+            padding: 30px 30px;
+        }
+    }
+
+    &__text {
+        max-width: 760px;
+
+        h2 {
+            font-family: var(--second-family);
+            font-weight: 700;
+            line-height: 108%;
+            @include font-size(48);
+            color: var(--white);
+
+            margin-bottom: 40px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        min-width: 250px;
+
+        &--star-1 {
+            position: absolute;
+            bottom: 1%;
+            left: 2%;
+
+            @media (max-width: 1000px) {
+                width: 50px;
+            }
+        }
+        &--star-2 {
+            position: absolute;
+            bottom: 5%;
+            right: 7%;
+            @media (max-width: 1000px) {
+                width: 50px;
+            }
+        }
+        &--star-3 {
+            position: absolute;
+            top: 1%;
+            left: 2%;
+            @media (max-width: 1000px) {
+                width: 50px;
+            }
+        }
+    }
+
+    .btn-cta {
+        padding: 22px;
+    }
+}
